@@ -1,3 +1,5 @@
+// 2-hbtn_course.js
+
 class HolbertonCourse {
   constructor(name, length, students) {
     this.name = name;
@@ -5,6 +7,7 @@ class HolbertonCourse {
     this.students = students;
   }
 
+  // Getters
   get name() {
     return this._name;
   }
@@ -17,6 +20,7 @@ class HolbertonCourse {
     return this._students;
   }
 
+  // Setters
   set name(value) {
     if (typeof value !== 'string') {
       throw new TypeError('Name must be a string');
@@ -40,3 +44,4 @@ class HolbertonCourse {
 }
 
 export default HolbertonCourse;
+
