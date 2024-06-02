@@ -1,3 +1,4 @@
+// 4-pricing.js
 import Currency from './3-currency';
 
 export default class Pricing {
@@ -11,6 +12,9 @@ export default class Pricing {
   }
 
   set amount(value) {
+    if (typeof value !== 'number') {
+      throw new TypeError('Amount must be a number');
+    }
     this._amount = value;
   }
 
@@ -19,6 +23,9 @@ export default class Pricing {
   }
 
   set currency(value) {
+    if (!(value instanceof Currency)) {
+      throw new TypeError('Currency must be an instance of Currency');
+    }
     this._currency = value;
   }
 
@@ -30,3 +37,4 @@ export default class Pricing {
     return amount * conversionRate;
   }
 }
+
