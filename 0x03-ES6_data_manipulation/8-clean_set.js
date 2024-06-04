@@ -1,4 +1,4 @@
-const cleanSet(set, startString) {
+const cleanSet = (set, startString) => {
   const strings = [];
 
   if (startString === '' || typeof startString !== 'string') return '';
