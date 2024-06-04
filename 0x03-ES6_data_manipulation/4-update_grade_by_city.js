@@ -5,7 +5,7 @@ export default function updateStudentGradeByCity(students, city, newgrades) {
     if (studentng.length > 0) {
       return {
         ...student,
-	grade: studentng[0].grade,
+        grade: studentng[0].grade,
       };
     }
     return {
@@ -14,3 +14,4 @@ export default function updateStudentGradeByCity(students, city, newgrades) {
     };
   });
 }
+
