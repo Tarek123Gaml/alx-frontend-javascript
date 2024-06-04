@@ -1,1 +1,3 @@
-export default const setFromArray = (arr) => new set(arr);
+const setFromArray = (arr) => new Set(arr);
+
+export default setFromArray;
