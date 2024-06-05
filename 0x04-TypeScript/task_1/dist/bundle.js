@@ -1,0 +1,1 @@
+(()=>{"use strict";var t=new(function(){function t(t){var r=t.firstName,e=t.lastName;this.firstName=r,this.lastName=e}return t.prototype.workOnHomework=function(){return"Currently working"},t.prototype.displayName=function(){return this.firstName},t}())({firstName:"tarek",lastName:"gamal"});console.log(t.displayName()),console.log(t.workOnHomework())})();
